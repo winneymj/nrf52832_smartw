@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ECH8693R-TL-W
+D Mosfet Array 2 N-Channel (Dual) Common Drain 24V 14A 1.4W Surface Mount SOT-28FL/ECH8
+K MOSFET 2N-CH 24V 14A SOT-28
+F http://www.onsemi.com/pub/Collateral/ECH8693R-D.PDF
+$ENDCMP
+#
+#End Doc Library
