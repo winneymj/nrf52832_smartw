@@ -291,29 +291,25 @@ BTN_1
 $Comp
 L Switch:SW_DPST_x2 SW1
 U 1 1 5D072A19
-P 1200 2450
-F 0 "SW1" H 1200 2685 50  0000 C CNN
-F 1 "SW_DPST_x2" H 1200 2594 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_DIP_x2_W5.08mm_Slide_Copal_CHS-A" H 1200 2450 50  0001 C CNN
-F 3 "" H 1200 2450 50  0001 C CNN
-	1    1200 2450
+P 5150 1150
+F 0 "SW1" H 5150 1385 50  0000 C CNN
+F 1 "UP" H 5150 1294 50  0000 C CNN
+F 2 "my-fp-library:Tact_SW_3x6x3.5" H 5150 1150 50  0001 C CNN
+F 3 "" H 5150 1150 50  0001 C CNN
+	1    5150 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5D072B76
-P 850 2650
-F 0 "#PWR0101" H 850 2400 50  0001 C CNN
-F 1 "GND" H 855 2477 50  0000 C CNN
-F 2 "" H 850 2650 50  0001 C CNN
-F 3 "" H 850 2650 50  0001 C CNN
-	1    850  2650
+P 4550 2200
+F 0 "#PWR0101" H 4550 1950 50  0001 C CNN
+F 1 "GND" H 4555 2027 50  0000 C CNN
+F 2 "" H 4550 2200 50  0001 C CNN
+F 3 "" H 4550 2200 50  0001 C CNN
+	1    4550 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1000 2450 850  2450
-Wire Wire Line
-	850  2450 850  2650
 Text GLabel 3550 1350 2    50   Output ~ 0
 MOTOR_PWM
 Wire Wire Line
@@ -360,4 +356,72 @@ U 5D09E285
 F0 "accelerometer" 50
 F1 "accelerometer.sch" 50
 $EndSheet
+$Comp
+L Switch:SW_DPST_x2 SW3
+U 1 1 5D0B8B59
+P 5150 1950
+F 0 "SW3" H 5150 2185 50  0000 C CNN
+F 1 "DWN" H 5150 2094 50  0000 C CNN
+F 2 "my-fp-library:Tact_SW_3x6x3.5" H 5150 1950 50  0001 C CNN
+F 3 "" H 5150 1950 50  0001 C CNN
+	1    5150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1950 5850 1950
+Wire Wire Line
+	5350 1550 5850 1550
+Wire Wire Line
+	5350 1150 5850 1150
+Wire Wire Line
+	4950 1950 4550 1950
+Wire Wire Line
+	4550 1950 4550 2200
+Wire Wire Line
+	4950 1550 4550 1550
+Wire Wire Line
+	4550 1550 4550 1950
+Connection ~ 4550 1950
+Wire Wire Line
+	4950 1150 4550 1150
+Wire Wire Line
+	4550 1150 4550 1550
+Connection ~ 4550 1550
+Text Label 5600 1150 0    50   ~ 0
+BTN_1
+Text Label 5600 1550 0    50   ~ 0
+BTN_2
+Text Label 5600 1950 0    50   ~ 0
+BTN_3
+Wire Wire Line
+	1800 2550 1400 2550
+Wire Wire Line
+	1800 2350 1400 2350
+Text Label 1450 2550 0    50   ~ 0
+BTN_2
+Text Label 1450 2350 0    50   ~ 0
+BTN_3
+Wire Wire Line
+	1800 1350 1400 1350
+Wire Wire Line
+	1800 1450 1400 1450
+Text Label 1450 1350 0    50   ~ 0
+SDA
+Text Label 1450 1450 0    50   ~ 0
+SCL
+Text GLabel 1400 1450 0    50   Output ~ 0
+I2C_SCL
+Text GLabel 1400 1350 0    50   Output ~ 0
+I2C_SDA
+$Comp
+L Switch:SW_DPST_x2 SW2
+U 1 1 5D0D8973
+P 5150 1550
+F 0 "SW2" H 5150 1785 50  0000 C CNN
+F 1 "MID" H 5150 1694 50  0000 C CNN
+F 2 "my-fp-library:Tact_SW_3x6x3.5" H 5150 1550 50  0001 C CNN
+F 3 "" H 5150 1550 50  0001 C CNN
+	1    5150 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

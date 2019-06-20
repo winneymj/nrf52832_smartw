@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name vib_motor)(type Legacy)(uri C:/Users/dell/Documents/KiCad/nrf_v1/nrf/vib_motor.lib)(options "")(descr ""))
   (lib (name _electromech)(type Legacy)(uri C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/_electromech.lib)(options "")(descr ""))
   (lib (name _linear)(type Legacy)(uri C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/_linear.lib)(options "")(descr ""))
   (lib (name _logic)(type Legacy)(uri C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/_logic.lib)(options "")(descr ""))
@@ -100,4 +99,10 @@
   (lib (name Winbond)(type Legacy)(uri C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/Winbond.lib)(options "")(descr ""))
   (lib (name Xilinx)(type Legacy)(uri C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/Xilinx.lib)(options "")(descr ""))
   (lib (name accel)(type Legacy)(uri ${KIPRJMOD}/accel.lib)(options "")(descr ""))
+  (lib (name MCU_Nordic)(type Legacy)(uri ${KIPRJMOD}/MCU_Nordic.lib)(options "")(descr ""))
+  (lib (name mosfet)(type Legacy)(uri ${KIPRJMOD}/mosfet.lib)(options "")(descr ""))
+  (lib (name nordic)(type Legacy)(uri ${KIPRJMOD}/nordic.lib)(options "")(descr ""))
+  (lib (name nrf-cache)(type Legacy)(uri ${KIPRJMOD}/nrf-cache.lib)(options "")(descr ""))
+  (lib (name oleds)(type Legacy)(uri ${KIPRJMOD}/oleds.lib)(options "")(descr ""))
+  (lib (name vib_motor)(type Legacy)(uri ${KIPRJMOD}/vib_motor.lib)(options "")(descr ""))
 )

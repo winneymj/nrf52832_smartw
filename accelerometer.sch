@@ -74,9 +74,9 @@ SDA
 Text Label 4800 3550 0    50   ~ 0
 SCL
 Text GLabel 4750 3350 0    50   Input ~ 0
-SDA
+I2C_SDA
 Text GLabel 4750 3550 0    50   Input ~ 0
-SCL
+I2C_SCL
 Wire Wire Line
 	6150 3450 6700 3450
 Wire Wire Line
@@ -123,22 +123,22 @@ F 3 "" H 4700 2900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small 10uF1
+L Device:C_Small C5
 U 1 1 5D0A1A79
 P 4950 2700
-F 0 "10uF1" H 5042 2746 50  0000 L CNN
-F 1 "C_Small" H 5042 2655 50  0000 L CNN
+F 0 "C5" H 5042 2746 50  0000 L CNN
+F 1 "10uF" H 5042 2655 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4950 2700 50  0001 C CNN
 F 3 "~" H 4950 2700 50  0001 C CNN
 	1    4950 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small 100uF1
+L Device:C_Small C4
 U 1 1 5D0A1B09
 P 4700 2700
-F 0 "100uF1" H 4400 2750 50  0000 L CNN
-F 1 "C_Small" H 4350 2650 50  0000 L CNN
+F 0 "C4" H 4400 2750 50  0000 L CNN
+F 1 "100nF" H 4350 2650 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805" H 4700 2700 50  0001 C CNN
 F 3 "~" H 4700 2700 50  0001 C CNN
 	1    4700 2700
@@ -164,13 +164,68 @@ Wire Wire Line
 Wire Wire Line
 	4950 2550 5650 2550
 Wire Wire Line
-	4750 3250 4750 3200
+	5250 3250 5250 2800
 Wire Wire Line
-	4750 3200 4700 3200
+	5250 2800 5550 2800
+Connection ~ 5550 2800
+$Comp
+L power:+3.3 #PWR0122
+U 1 1 5D0B441E
+P 7750 2700
+F 0 "#PWR0122" H 7750 2750 30  0001 C CNN
+F 1 "+3.3" H 7750 2833 50  0000 C CNN
+F 2 "" H 7750 2700 60  0000 C CNN
+F 3 "" H 7750 2700 60  0000 C CNN
+	1    7750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L _passive:R R11
+U 1 1 5D0B4A51
+P 7550 2950
+F 0 "R11" H 7613 2996 50  0000 L CNN
+F 1 "10K" H 7613 2905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7550 3000 60  0001 C CNN
+F 3 "" H 7550 3000 60  0000 C CNN
+	1    7550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L _passive:R R12
+U 1 1 5D0B4A79
+P 7900 2950
+F 0 "R12" H 7963 2996 50  0000 L CNN
+F 1 "10K" H 7963 2905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 7900 3000 60  0001 C CNN
+F 3 "" H 7900 3000 60  0000 C CNN
+	1    7900 2950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4750 3250 5250 3250
-Text GLabel 4700 3200 0    50   Input ~ 0
-CS
-Text Label 4800 3250 0    50   ~ 0
-CS
+	7750 2750 7550 2750
+Wire Wire Line
+	7550 2750 7550 2850
+Wire Wire Line
+	7750 2750 7900 2750
+Wire Wire Line
+	7900 2750 7900 2850
+Connection ~ 7750 2750
+Wire Wire Line
+	7900 3050 7900 3350
+Wire Wire Line
+	7900 3350 8200 3350
+Wire Wire Line
+	7750 2750 7750 2700
+Text GLabel 8200 3350 2    50   Output ~ 0
+I2C_SDA
+Wire Wire Line
+	7550 3050 7550 3550
+Wire Wire Line
+	7550 3550 8200 3550
+Text GLabel 8200 3550 2    50   Output ~ 0
+I2C_SCL
+Text Label 8000 3350 0    50   ~ 0
+SDA
+Text Label 8000 3550 0    50   ~ 0
+SCL
 $EndSCHEMATC
