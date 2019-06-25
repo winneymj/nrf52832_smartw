@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:nrf-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -57,17 +57,6 @@ Wire Wire Line
 	6650 2700 6650 3100
 Text GLabel 4550 3650 0    50   Input ~ 0
 MOTOR_PWM
-$Comp
-L power:GND #PWR0108
-U 1 1 5D05CFA3
-P 4850 4850
-F 0 "#PWR0108" H 4850 4600 50  0001 C CNN
-F 1 "GND" H 4855 4677 50  0000 C CNN
-F 2 "" H 4850 4850 50  0001 C CNN
-F 3 "" H 4850 4850 50  0001 C CNN
-	1    4850 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6650 3400 6650 4250
 Wire Wire Line
@@ -90,12 +79,9 @@ Connection ~ 6650 4550
 Wire Wire Line
 	5350 4550 4850 4550
 Wire Wire Line
-	4850 4550 4850 4850
-Wire Wire Line
 	5350 4250 4850 4250
 Wire Wire Line
 	4850 4250 4850 4550
-Connection ~ 4850 4550
 Wire Wire Line
 	4550 3650 4850 3650
 Wire Wire Line
@@ -137,4 +123,18 @@ F 3 "" H 5000 2200 60  0000 C CNN
 	1    5000 2200
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:(GND) #PWR?
+U 1 1 5D11D46A
+P 4850 4850
+F 0 "#PWR?" H 4850 4850 30  0001 C CNN
+F 1 "(GND)" H 4850 4850 30  0001 C CNN
+F 2 "" H 4850 4850 60  0000 C CNN
+F 3 "" H 4850 4850 60  0000 C CNN
+	1    4850 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 4550
+Wire Wire Line
+	4850 4550 4850 4850
 $EndSCHEMATC
