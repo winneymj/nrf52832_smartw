@@ -160,7 +160,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 2850 7200 2850
 $Sheet
-S 650  7000 1050 600 
+S 650  6950 1050 600 
 U 5D059B17
 F0 "vibration_motor" 50
 F1 "vibration_motor.sch" 50

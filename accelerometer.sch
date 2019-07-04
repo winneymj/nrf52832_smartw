@@ -228,4 +228,61 @@ Text Label 8000 3350 0    50   ~ 0
 SDA
 Text Label 8000 3550 0    50   ~ 0
 SCL
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 5D1D81D8
+P 7250 4400
+F 0 "J4" H 7330 4392 50  0000 L CNN
+F 1 "Conn_01x06" H 7330 4301 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7250 4400 50  0001 C CNN
+F 3 "~" H 7250 4400 50  0001 C CNN
+	1    7250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3 #PWR0104
+U 1 1 5D1D8E53
+P 6800 3950
+F 0 "#PWR0104" H 6800 4000 30  0001 C CNN
+F 1 "+3.3" H 6800 4083 50  0000 C CNN
+F 2 "" H 6800 3950 60  0000 C CNN
+F 3 "" H 6800 3950 60  0000 C CNN
+	1    6800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:(GND) #PWR0105
+U 1 1 5D1D97A2
+P 6800 4900
+F 0 "#PWR0105" H 6800 4900 30  0001 C CNN
+F 1 "(GND)" H 6800 4900 30  0001 C CNN
+F 2 "" H 6800 4900 60  0000 C CNN
+F 3 "" H 6800 4900 60  0000 C CNN
+	1    6800 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4200 6800 4200
+Wire Wire Line
+	6800 4200 6800 3950
+Wire Wire Line
+	7050 4700 6800 4700
+Wire Wire Line
+	6800 4700 6800 4900
+Text GLabel 6700 4300 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 6700 4400 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 6700 4500 0    50   Input ~ 0
+XL_INT_1
+Text GLabel 6700 4600 0    50   Input ~ 0
+XL_INT_2
+Wire Wire Line
+	6700 4300 7050 4300
+Wire Wire Line
+	6700 4400 7050 4400
+Wire Wire Line
+	6700 4500 7050 4500
+Wire Wire Line
+	6700 4600 7050 4600
 $EndSCHEMATC
