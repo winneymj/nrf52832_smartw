@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -495,4 +495,10 @@ Text Label 4450 3300 0    50   ~ 0
 SWDCLK
 Text Label 4450 3200 0    50   ~ 0
 SWDIO
+$Sheet
+S 2700 6400 1400 850 
+U 5DA394ED
+F0 "240x240_display" 50
+F1 "240x240_display.sch" 50
+$EndSheet
 $EndSCHEMATC

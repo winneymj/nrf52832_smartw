@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -194,8 +194,6 @@ Wire Wire Line
 	5200 4450 5200 4600
 Wire Wire Line
 	5400 4450 5400 4600
-Text GLabel 4200 3100 0    50   Input ~ 0
-VCC
 Wire Wire Line
 	4200 3100 4550 3100
 $Comp
@@ -283,8 +281,6 @@ Wire Wire Line
 Connection ~ 4600 6225
 Wire Wire Line
 	4600 6225 4600 6300
-Text GLabel 5250 5750 2    50   Output ~ 0
-VCC
 Wire Wire Line
 	5000 5750 5100 5750
 $Comp
@@ -305,8 +301,6 @@ $EndComp
 Wire Wire Line
 	5100 5950 5100 5750
 Connection ~ 5100 5750
-Wire Wire Line
-	5100 5750 5250 5750
 $Comp
 L power:(GND) #PWR016
 U 1 1 5D9F3F2F
@@ -322,6 +316,50 @@ Wire Wire Line
 	5100 6150 5100 6300
 Text Notes 4350 5450 0    50   ~ 0
 3.3V Regulator
-Text Notes 3800 2950 0    50   ~ 0
+Text Notes 3800 2850 0    50   ~ 0
 Single-cell Li-Ion battery charger
+$Comp
+L power:+3.3 #PWR0106
+U 1 1 5DA4537A
+P 5350 5650
+F 0 "#PWR0106" H 5350 5700 30  0001 C CNN
+F 1 "+3.3" H 5350 5783 50  0000 C CNN
+F 2 "" H 5350 5650 60  0000 C CNN
+F 3 "" H 5350 5650 60  0000 C CNN
+	1    5350 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5750 5350 5650
+Wire Wire Line
+	5100 5750 5350 5750
+Text GLabel 4200 3350 0    50   Output ~ 0
+PPR
+Text GLabel 5200 3350 2    50   Output ~ 0
+CHG
+Wire Wire Line
+	4550 3550 4350 3550
+Wire Wire Line
+	4350 3550 4350 3350
+Wire Wire Line
+	4350 3350 4200 3350
+Connection ~ 4550 3550
+Wire Wire Line
+	4750 3550 5100 3550
+Wire Wire Line
+	5100 3550 5100 3350
+Wire Wire Line
+	5100 3350 5200 3350
+Connection ~ 4750 3550
+$Comp
+L power:+3.3 #PWR0108
+U 1 1 5DA481CF
+P 4200 3100
+F 0 "#PWR0108" H 4200 3150 30  0001 C CNN
+F 1 "+3.3" H 4200 3233 50  0000 C CNN
+F 2 "" H 4200 3100 60  0000 C CNN
+F 3 "" H 4200 3100 60  0000 C CNN
+	1    4200 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
