@@ -147,17 +147,6 @@ Wire Wire Line
 	5450 4100 5450 4000
 Wire Wire Line
 	5450 3800 5450 3650
-$Comp
-L Transistor_FET:BSS138 Q1
-U 1 1 5DA4FE84
-P 5900 4100
-F 0 "Q1" H 6106 4146 50  0000 L CNN
-F 1 "BSS138" H 6106 4055 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6100 4025 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 5900 4100 50  0001 L CNN
-	1    5900 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5450 4100 5700 4100
 Connection ~ 5450 4100
@@ -404,4 +393,15 @@ Wire Wire Line
 	3700 5200 3700 5350
 Wire Wire Line
 	3700 5550 3700 5750
+$Comp
+L mosfet:FDC6420C Q1
+U 1 1 5DA8A9CF
+P 5900 4100
+F 0 "Q1" H 6091 4146 50  0000 L CNN
+F 1 "FDC6420C" H 6091 4055 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-666" H 6100 4025 50  0001 L CNN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 5900 4100 50  0001 L CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
