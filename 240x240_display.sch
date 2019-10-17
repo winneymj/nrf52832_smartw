@@ -399,7 +399,7 @@ U 1 1 5DA8A9CF
 P 5900 4100
 F 0 "Q1" H 6091 4146 50  0000 L CNN
 F 1 "FDC6420C" H 6091 4055 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-666" H 6100 4025 50  0001 L CNN
+F 2 "TO_SOT_Packages_SMD:SuperSOT-6" H 6100 4025 50  0001 L CNN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 5900 4100 50  0001 L CNN
 	1    5900 4100
 	1    0    0    -1  
