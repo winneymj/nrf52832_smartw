@@ -106,4 +106,5 @@
   (lib (name oleds)(type Legacy)(uri ${KIPRJMOD}/oleds.lib)(options "")(descr ""))
   (lib (name vib_motor)(type Legacy)(uri ${KIPRJMOD}/vib_motor.lib)(options "")(descr ""))
   (lib (name Power_Management)(type Legacy)(uri ${KIPRJMOD}/Power_Management.lib)(options "")(descr ""))
+  (lib (name nrf-rescue)(type Legacy)(uri ${KIPRJMOD}/nrf-rescue.lib)(options "")(descr ""))
 )
