@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -500,11 +500,5 @@ S 2700 6400 1400 850
 U 5DA394ED
 F0 "240x240_display" 50
 F1 "240x240_display.sch" 50
-$EndSheet
-$Sheet
-S 4700 4750 1500 1000
-U 5DB5F0E7
-F0 "display" 50
-F1 "display.sch" 50
 $EndSheet
 $EndSCHEMATC
