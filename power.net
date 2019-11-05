@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\dell\Documents\KiCad\nrf_v1\nrf52832_smartw\nrf.sch)
-    (date "10/19/2019 12:50:50 PM")
+    (date "11/4/2019 6:36:36 PM")
     (tool "Eeschema (5.1.2)-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -166,7 +166,7 @@
       (tstamp 5C2824CB))
     (comp (ref J6)
       (value CONN_01X05)
-      (footprint Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm)
+      (footprint Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm)
       (libsource (lib nrf-rescue) (part CONN_01X05-conn) (description ""))
       (sheetpath (names /pwr/) (tstamps /5D08BD3C/))
       (tstamp 5C26D2A2))
@@ -308,7 +308,7 @@
       (tstamp 5D1D81D8))
     (comp (ref J1)
       (value Conn_02x12_Counter_Clockwise)
-      (footprint Socket_Strips:Socket_Strip_Straight_2x12_Pitch1.27mm_SMD)
+      (footprint "SMD_Packages:DF37B-24DP-0.4V(51)")
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_02x12_Counter_Clockwise) (description "Generic connector, double row, 02x12, counter clockwise pin numbering scheme (similar to DIP packge numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /240x240_display/) (tstamps /5DA394ED/))

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\dell\Documents\KiCad\nrf_v1\nrf52832_smartw\nrf.sch)
-    (date "10/27/2019 6:55:28 PM")
+    (date "10/28/2019 6:45:06 PM")
     (tool "Eeschema (5.1.2)-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

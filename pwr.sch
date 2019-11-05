@@ -52,7 +52,7 @@ U 1 1 5C26D2A2
 P 1800 2850
 F 0 "J6" H 1719 2425 50  0000 C CNN
 F 1 "CONN_01X05" H 1719 2516 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm" H 1800 2850 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 1800 2850 50  0001 C CNN
 F 3 "" H 1800 2850 50  0001 C CNN
 	1    1800 2850
 	-1   0    0    1   
