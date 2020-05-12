@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -90,7 +90,7 @@ AR Path="/5C2799D2/5CC3BEB0" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC3BEB0" Ref="R16"  Part="1" 
 F 0 "R16" V 7130 3750 50  0000 C CNN
 F 1 "10K" V 7050 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6980 3750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6980 3750 50  0001 C CNN
 F 3 "" H 7050 3750 50  0000 C CNN
 	1    7050 3750
 	1    0    0    -1  
@@ -146,7 +146,7 @@ AR Path="/5C2799D2/5CC46F6E" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC46F6E" Ref="R6"  Part="1" 
 F 0 "R6" V 4480 2650 50  0000 C CNN
 F 1 "270K" V 4400 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4330 2650 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4330 2650 50  0001 C CNN
 F 3 "" H 4400 2650 50  0000 C CNN
 	1    4400 2650
 	1    0    0    -1  
@@ -160,7 +160,7 @@ AR Path="/5C2799D2/5CC46FF0" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC46FF0" Ref="R7"  Part="1" 
 F 0 "R7" V 4480 3050 50  0000 C CNN
 F 1 "100K" V 4400 3050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4330 3050 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4330 3050 50  0001 C CNN
 F 3 "" H 4400 3050 50  0000 C CNN
 	1    4400 3050
 	1    0    0    -1  
@@ -206,7 +206,7 @@ AR Path="/5C2799D2/5CC61290" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC61290" Ref="R5"  Part="1" 
 F 0 "R5" V 4030 3050 50  0000 C CNN
 F 1 "1K" V 3950 3050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3880 3050 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3880 3050 50  0001 C CNN
 F 3 "" H 3950 3050 50  0000 C CNN
 	1    3950 3050
 	1    0    0    -1  
@@ -220,7 +220,7 @@ AR Path="/5C2799D2/5CC6131A" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC6131A" Ref="R4"  Part="1" 
 F 0 "R4" V 3680 3050 50  0000 C CNN
 F 1 "1K" V 3600 3050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3530 3050 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3530 3050 50  0001 C CNN
 F 3 "" H 3600 3050 50  0000 C CNN
 	1    3600 3050
 	1    0    0    -1  
@@ -338,7 +338,7 @@ AR Path="/5C2799D2/5CC82C34" Ref="C?"  Part="1"
 AR Path="/5D08BD3C/5CC82C34" Ref="C9"  Part="1" 
 F 0 "C9" H 7910 3470 50  0000 L CNN
 F 1 "10uF" H 7910 3320 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7900 3400 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7900 3400 50  0001 C CNN
 F 3 "" H 7900 3400 50  0000 C CNN
 	1    7900 3400
 	1    0    0    -1  
@@ -373,7 +373,7 @@ AR Path="/5C2799D2/5CC87D7B" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC87D7B" Ref="R15"  Part="1" 
 F 0 "R15" V 6930 3750 50  0000 C CNN
 F 1 "1K" V 6850 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6780 3750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6780 3750 50  0001 C CNN
 F 3 "" H 6850 3750 50  0000 C CNN
 	1    6850 3750
 	1    0    0    -1  
@@ -387,7 +387,7 @@ AR Path="/5C2799D2/5CC87DC1" Ref="R?"  Part="1"
 AR Path="/5D08BD3C/5CC87DC1" Ref="R14"  Part="1" 
 F 0 "R14" V 6730 3750 50  0000 C CNN
 F 1 "100K" V 6650 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6580 3750 50  0001 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6580 3750 50  0001 C CNN
 F 3 "" H 6650 3750 50  0000 C CNN
 	1    6650 3750
 	1    0    0    -1  
@@ -523,7 +523,7 @@ AR Path="/5D08445F/5DAE50B5" Ref="C?"  Part="1"
 AR Path="/5D08BD3C/5DAE50B5" Ref="C3"  Part="1" 
 F 0 "C3" H 3150 6200 50  0000 L CNN
 F 1 "470pF" H 3000 6300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3050 6200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3050 6200 50  0001 C CNN
 F 3 "" H 3050 6200 50  0000 C CNN
 	1    3050 6200
 	1    0    0    -1  
@@ -557,7 +557,7 @@ AR Path="/5D08445F/5DAEF9B8" Ref="C?"  Part="1"
 AR Path="/5D08BD3C/5DAEF9B8" Ref="C6"  Part="1" 
 F 0 "C6" H 3500 6200 50  0000 L CNN
 F 1 "470pF" H 3350 6300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3400 6200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3400 6200 50  0001 C CNN
 F 3 "" H 3400 6200 50  0000 C CNN
 	1    3400 6200
 	1    0    0    -1  
@@ -572,7 +572,7 @@ AR Path="/5D08445F/5DAEFE2F" Ref="C?"  Part="1"
 AR Path="/5D08BD3C/5DAEFE2F" Ref="C7"  Part="1" 
 F 0 "C7" H 3800 6200 50  0000 L CNN
 F 1 "470pF" H 3650 6300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 3700 6200 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3700 6200 50  0001 C CNN
 F 3 "" H 3700 6200 50  0000 C CNN
 	1    3700 6200
 	1    0    0    -1  

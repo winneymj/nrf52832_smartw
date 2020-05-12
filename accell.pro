@@ -1,4 +1,4 @@
-update=7/3/2019 7:27:12 PM
+update=5/3/2020 2:27:39 PM
 version=1
 last_client=pcbnew
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=nrf.net
+LastNetListRead=accel.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -223,7 +223,7 @@ Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
-Enabled=1
+Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
