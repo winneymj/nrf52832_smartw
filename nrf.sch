@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -30,12 +30,6 @@ S 650  4750 1450 1000
 U 5D08BD3C
 F0 "pwr" 50
 F1 "pwr.sch" 50
-$EndSheet
-$Sheet
-S 2650 4750 1450 950 
-U 5D09E285
-F0 "accelerometer" 50
-F1 "accelerometer.sch" 50
 $EndSheet
 $Comp
 L Switch:SW_DPST_x2 SW3
@@ -627,7 +621,7 @@ U 1 1 5EBE7095
 P 8100 1550
 F 0 "J7" H 8018 725 50  0000 C CNN
 F 1 "Conn_01x12" H 8018 816 50  0000 C CNN
-F 2 "" H 8100 1550 50  0001 C CNN
+F 2 "my-fp-library:FPC_12x0.7mm" H 8100 1550 50  0001 C CNN
 F 3 "~" H 8100 1550 50  0001 C CNN
 	1    8100 1550
 	-1   0    0    1   
@@ -692,11 +686,11 @@ SPI_CS
 Wire Wire Line
 	8300 1250 8750 1250
 Text Label 8500 1250 0    50   ~ 0
-SPI_SCL
+SPI_SCK
 Wire Wire Line
 	8300 1150 8750 1150
 Text Label 8500 1150 0    50   ~ 0
-SPI_SDA
+SPI_MOSI
 Wire Wire Line
 	8300 1050 8750 1050
 Text Label 8500 1050 0    50   ~ 0
@@ -1104,4 +1098,244 @@ Wire Wire Line
 	1300 1750 850  1750
 Text Label 900  1750 0    50   ~ 0
 LIGHT3
+Wire Wire Line
+	3000 1550 3600 1550
+Text Label 3150 1550 0    50   ~ 0
+SPI_MOSI
+Wire Wire Line
+	3000 1450 3600 1450
+Text Label 3150 1450 0    50   ~ 0
+SPI_SCK
+Wire Wire Line
+	3000 1650 3600 1650
+Text Label 3150 1650 0    50   ~ 0
+SPI_CS
+Wire Wire Line
+	3000 1750 3600 1750
+Text Label 3150 1750 0    50   ~ 0
+SPI_DC
+Text Label 3150 2550 0    50   ~ 0
+SPI_RESET
+$Comp
+L SamacSys_Parts:BMA423 IC?
+U 1 1 5EC18F54
+P 7000 4550
+AR Path="/5D09E285/5EC18F54" Ref="IC?"  Part="1" 
+AR Path="/5EC18F54" Ref="IC1"  Part="1" 
+F 0 "IC1" V 7250 3850 50  0000 C CNN
+F 1 "BMA423" V 7100 4850 50  0000 C CNN
+F 2 "SamacSys_Parts:BMA423" H 7950 5050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/BMA423.pdf" H 7950 4950 50  0001 L CNN
+F 4 "Accelerometers Triaxial low-g 12bit Acceleration Sensor" H 7950 4850 50  0001 L CNN "Description"
+F 5 "1" H 7950 4750 50  0001 L CNN "Height"
+F 6 "262-BMA423" H 7950 4650 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=262-BMA423" H 7950 4550 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Bosch Sensortec" H 7950 4450 50  0001 L CNN "Manufacturer_Name"
+F 9 "BMA423" H 7950 4350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7000 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:(GND) #PWR?
+U 1 1 5EC18F5A
+P 8300 5600
+AR Path="/5D09E285/5EC18F5A" Ref="#PWR?"  Part="1" 
+AR Path="/5EC18F5A" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 8300 5600 30  0001 C CNN
+F 1 "(GND)" H 8300 5600 30  0001 C CNN
+F 2 "" H 8300 5600 60  0000 C CNN
+F 3 "" H 8300 5600 60  0000 C CNN
+	1    8300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5050 8300 5050
+Wire Wire Line
+	8300 5050 8300 5150
+Wire Wire Line
+	7700 5150 8300 5150
+Connection ~ 8300 5150
+Wire Wire Line
+	8300 5150 8300 5450
+$Comp
+L power:+3.3 #PWR?
+U 1 1 5EC18F65
+P 7850 4600
+AR Path="/5D09E285/5EC18F65" Ref="#PWR?"  Part="1" 
+AR Path="/5EC18F65" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 7850 4650 30  0001 C CNN
+F 1 "+3.3" H 7850 4733 50  0000 C CNN
+F 2 "" H 7850 4600 60  0000 C CNN
+F 3 "" H 7850 4600 60  0000 C CNN
+	1    7850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5250 7850 5250
+Wire Wire Line
+	7850 5250 7850 4600
+$Comp
+L Device:C_Small C?
+U 1 1 5EC18F6D
+P 8000 5350
+AR Path="/5D09E285/5EC18F6D" Ref="C?"  Part="1" 
+AR Path="/5EC18F6D" Ref="C5"  Part="1" 
+F 0 "C5" H 7700 5400 50  0000 L CNN
+F 1 "0.1uF" H 7650 5300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8000 5350 50  0001 C CNN
+F 3 "~" H 8000 5350 50  0001 C CNN
+	1    8000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5250 8000 5250
+Connection ~ 7850 5250
+Wire Wire Line
+	8000 5450 8300 5450
+Connection ~ 8300 5450
+Wire Wire Line
+	8300 5450 8300 5600
+Wire Wire Line
+	6700 4350 6900 4350
+Wire Wire Line
+	6900 4350 6900 4550
+Wire Wire Line
+	6900 5650 6900 5800
+Wire Wire Line
+	6900 5800 6700 5800
+Wire Wire Line
+	7000 5650 7000 5950
+Wire Wire Line
+	7000 5950 6700 5950
+Wire Wire Line
+	6100 5050 6200 5050
+$Comp
+L Device:R_Small R?
+U 1 1 5EC31EE0
+P 2900 6950
+AR Path="/5DA394ED/5EC31EE0" Ref="R?"  Part="1" 
+AR Path="/5EC31EE0" Ref="R11"  Part="1" 
+F 0 "R11" H 2959 6996 50  0000 L CNN
+F 1 "10K" H 2959 6905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 2900 6950 50  0001 C CNN
+F 3 "~" H 2900 6950 50  0001 C CNN
+	1    2900 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 7050 2900 7250
+$Comp
+L Device:R_Small R?
+U 1 1 5EC31EF5
+P 3250 6950
+AR Path="/5DA394ED/5EC31EF5" Ref="R?"  Part="1" 
+AR Path="/5EC31EF5" Ref="R12"  Part="1" 
+F 0 "R12" H 3309 6996 50  0000 L CNN
+F 1 "10K" H 3309 6905 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 3250 6950 50  0001 C CNN
+F 3 "~" H 3250 6950 50  0001 C CNN
+	1    3250 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 7050 3250 7250
+Wire Wire Line
+	2900 6500 2900 6850
+Wire Wire Line
+	3250 6500 3250 6850
+Text Label 2900 7200 1    50   ~ 0
+SDA
+Text Label 3250 7200 1    50   ~ 0
+SCL
+$Comp
+L power:+3.3 #PWR?
+U 1 1 5EC40325
+P 2900 6500
+AR Path="/5D09E285/5EC40325" Ref="#PWR?"  Part="1" 
+AR Path="/5EC40325" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 2900 6550 30  0001 C CNN
+F 1 "+3.3" H 2900 6633 50  0000 C CNN
+F 2 "" H 2900 6500 60  0000 C CNN
+F 3 "" H 2900 6500 60  0000 C CNN
+	1    2900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3 #PWR?
+U 1 1 5EC40975
+P 3250 6500
+AR Path="/5D09E285/5EC40975" Ref="#PWR?"  Part="1" 
+AR Path="/5EC40975" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 3250 6550 30  0001 C CNN
+F 1 "+3.3" H 3250 6633 50  0000 C CNN
+F 2 "" H 3250 6500 60  0000 C CNN
+F 3 "" H 3250 6500 60  0000 C CNN
+	1    3250 6500
+	1    0    0    -1  
+$EndComp
+Text Label 6100 5050 0    50   ~ 0
+SDA
+Text Label 6700 4350 0    50   ~ 0
+SCL
+Text Label 6700 5800 0    50   ~ 0
+INT1
+Text Label 6700 5950 0    50   ~ 0
+INT2
+Wire Wire Line
+	5850 5500 5850 5600
+Connection ~ 5850 5500
+Wire Wire Line
+	5950 5500 5850 5500
+Wire Wire Line
+	5950 4950 5950 5500
+Wire Wire Line
+	5850 5450 5850 5500
+$Comp
+L Device:C_Small C?
+U 1 1 5EC18F85
+P 5850 5350
+AR Path="/5D09E285/5EC18F85" Ref="C?"  Part="1" 
+AR Path="/5EC18F85" Ref="C4"  Part="1" 
+F 0 "C4" H 5550 5400 50  0000 L CNN
+F 1 "0.1uF" H 5500 5300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5850 5350 50  0001 C CNN
+F 3 "~" H 5850 5350 50  0001 C CNN
+	1    5850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:(GND) #PWR?
+U 1 1 5EC18F7F
+P 5850 5600
+AR Path="/5D09E285/5EC18F7F" Ref="#PWR?"  Part="1" 
+AR Path="/5EC18F7F" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 5850 5600 30  0001 C CNN
+F 1 "(GND)" H 5850 5600 30  0001 C CNN
+F 2 "" H 5850 5600 60  0000 C CNN
+F 3 "" H 5850 5600 60  0000 C CNN
+	1    5850 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3 #PWR?
+U 1 1 5EC18F78
+P 5850 4550
+AR Path="/5D09E285/5EC18F78" Ref="#PWR?"  Part="1" 
+AR Path="/5EC18F78" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 5850 4600 30  0001 C CNN
+F 1 "+3.3" H 5850 4683 50  0000 C CNN
+F 2 "" H 5850 4550 60  0000 C CNN
+F 3 "" H 5850 4550 60  0000 C CNN
+	1    5850 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5150 5850 4550
+Wire Wire Line
+	5850 5150 5850 5250
+Connection ~ 5850 5150
+Wire Wire Line
+	5850 5150 6200 5150
+Wire Wire Line
+	5950 4950 6200 4950
 $EndSCHEMATC
