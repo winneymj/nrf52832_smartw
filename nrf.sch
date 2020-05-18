@@ -30,7 +30,7 @@ L Switch:SW_DPST_x2 SW3
 U 1 1 5D0B8B59
 P 5150 1950
 F 0 "SW3" H 5150 2185 50  0000 C CNN
-F 1 "BACK" H 5150 2094 50  0000 C CNN
+F 1 "DOWN" H 5150 2094 50  0000 C CNN
 F 2 "my-fp-library:Tact_SW_3x6x3.5" H 5150 1950 50  0001 C CNN
 F 3 "" H 5150 1950 50  0001 C CNN
 	1    5150 1950
@@ -126,17 +126,6 @@ Text Label 6600 1250 0    50   ~ 0
 SWDIO
 Wire Wire Line
 	4550 1950 4550 2300
-$Comp
-L Switch:SW_DPST_x2 SW3
-U 2 1 5EAE6769
-P 5150 2300
-F 0 "SW3" H 5150 2535 50  0000 C CNN
-F 1 "BACK" H 5150 2444 50  0000 C CNN
-F 2 "my-fp-library:Tact_SW_3x6x3.5" H 5150 2300 50  0001 C CNN
-F 3 "" H 5150 2300 50  0001 C CNN
-	2    5150 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4950 2300 4550 2300
 Connection ~ 4550 2300
@@ -262,8 +251,9 @@ U 1 1 5EB4BE54
 P 1900 7100
 F 0 "X1" V 1685 7100 50  0000 C CNN
 F 1 "32.768" V 1776 7100 50  0000 C CNN
-F 2 "" H 1900 7100 60  0001 C CNN
-F 3 "" H 1900 7100 60  0000 C CNN
+F 2 "Crystals:Crystal_SMD_EuroQuartz_EQ161-2pin_3.2x1.5mm_HandSoldering" H 1900 7100 60  0001 C CNN
+F 3 "https://abracon.com/Resonators/ABS07.pdf" H 1900 7100 60  0001 C CNN
+F 4 "https://www.digikey.com/products/en/crystals-oscillators-resonators/crystals/171?k=&pkeyword=&sv=0&pv537=1398&pv2082=u70+kOhms&sf=1&FV=-1%7C535%2C35%7C305379%2C-8%7C171%2C16%7C168669&quantity=&ColumnSort=0&page=1&pageSize=25" V 1900 7100 50  0001 C CNN "Digikey"
 	1    1900 7100
 	0    1    1    0   
 $EndComp
@@ -292,7 +282,7 @@ L Device:C_Small C1
 U 1 1 5EB5D0A0
 P 1650 7400
 F 0 "C1" H 1742 7446 50  0000 L CNN
-F 1 "22pF" H 1742 7355 50  0000 L CNN
+F 1 "9pF" H 1742 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1650 7400 50  0001 C CNN
 F 3 "~" H 1650 7400 50  0001 C CNN
 	1    1650 7400
@@ -303,7 +293,7 @@ L Device:C_Small C10
 U 1 1 5EB5DAAB
 P 2150 7400
 F 0 "C10" H 2242 7446 50  0000 L CNN
-F 1 "22pF" H 2242 7355 50  0000 L CNN
+F 1 "9pF" H 2242 7355 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2150 7400 50  0001 C CNN
 F 3 "~" H 2150 7400 50  0001 C CNN
 	1    2150 7400
@@ -382,8 +372,8 @@ L Switch:SW_DPST_x2 SW4
 U 1 1 5EB69732
 P 3000 7400
 F 0 "SW4" H 3000 7635 50  0000 C CNN
-F 1 "DWN" H 3000 7544 50  0000 C CNN
-F 2 "my-fp-library:Tact_SW_3x6x3.5" H 3000 7400 50  0001 C CNN
+F 1 "RESET" H 3000 7544 50  0000 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3U-1000P" H 3000 7400 50  0001 C CNN
 F 3 "" H 3000 7400 50  0001 C CNN
 	1    3000 7400
 	1    0    0    -1  
@@ -413,8 +403,9 @@ U 1 1 5EB7260C
 P 11950 5450
 F 0 "U1" H 12300 5900 50  0000 L CNN
 F 1 "GD25Q16" H 11500 5850 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11950 4850 50  0001 C CNN
-F 3 "https://www.adestotech.com/wp-content/uploads/DS-AT25SF081_045.pdf" H 11950 5450 50  0001 C CNN
+F 2 "SMD_Packages:USON8-4x3" H 11950 4850 50  0001 C CNN
+F 3 "http://www.gigadevice.com/datasheet/gd25q16c/" H 11950 5450 50  0001 C CNN
+F 4 "8-USON (4x3)" H 11950 5450 50  0001 C CNN "dims"
 	1    11950 5450
 	1    0    0    -1  
 $EndComp
@@ -1333,35 +1324,19 @@ Wire Wire Line
 Wire Wire Line
 	5050 3300 5300 3300
 $Comp
-L nrf-rescue:CONN_01X02-conn P1
-U 1 1 5EC59A90
-P 5250 5550
-AR Path="/5EC59A90" Ref="P1"  Part="1" 
-AR Path="/5C2799D2/5EC59A90" Ref="P?"  Part="1" 
-AR Path="/5D08BD3C/5EC59A90" Ref="P?"  Part="1" 
-F 0 "P1" H 5250 5700 50  0000 C CNN
-F 1 "BATT" V 5350 5550 50  0000 C CNN
-F 2 "my-fp-library:Battery Pads 3x3" H 5250 5550 50  0001 C CNN
-F 3 "" H 5250 5550 50  0000 C CNN
-	1    5250 5550
-	1    0    0    -1  
-$EndComp
-$Comp
 L nrf-rescue:(GND)-power1 #PWR041
 U 1 1 5EC59A96
-P 5050 5750
+P 5800 7600
 AR Path="/5EC59A96" Ref="#PWR041"  Part="1" 
 AR Path="/5C2799D2/5EC59A96" Ref="#PWR?"  Part="1" 
 AR Path="/5D08BD3C/5EC59A96" Ref="#PWR?"  Part="1" 
-F 0 "#PWR041" H 5050 5750 30  0001 C CNN
-F 1 "(GND)" H 5050 5750 30  0001 C CNN
-F 2 "" H 5050 5750 60  0000 C CNN
-F 3 "" H 5050 5750 60  0000 C CNN
-	1    5050 5750
+F 0 "#PWR041" H 5800 7600 30  0001 C CNN
+F 1 "(GND)" H 5800 7600 30  0001 C CNN
+F 2 "" H 5800 7600 60  0000 C CNN
+F 3 "" H 5800 7600 60  0000 C CNN
+	1    5800 7600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 5600 5050 5750
 $Comp
 L Device:R R16
 U 1 1 5EC59A9D
@@ -1577,7 +1552,7 @@ Connection ~ 2550 5900
 Wire Wire Line
 	4050 4700 4350 4700
 Wire Wire Line
-	4350 4700 4550 4700
+	4350 4700 4450 4700
 Wire Wire Line
 	4050 4800 4350 4800
 Wire Wire Line
@@ -1969,4 +1944,160 @@ Text Label 3150 3450 0    50   ~ 0
 PWR_SENSE
 Text Label 3150 3550 0    50   ~ 0
 PWR_STAT
+$Comp
+L Switch:SW_DPST_x2 SW5
+U 1 1 5EC305B1
+P 5150 2300
+F 0 "SW5" H 5150 2535 50  0000 C CNN
+F 1 "BACK" H 5150 2444 50  0000 C CNN
+F 2 "my-fp-library:Tact_SW_3x6x3.5" H 5150 2300 50  0001 C CNN
+F 3 "" H 5150 2300 50  0001 C CNN
+	1    5150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EC905BD
+P 4500 7550
+F 0 "TP1" H 4442 7576 50  0000 R CNN
+F 1 "TestPoint" H 4442 7667 50  0000 R CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Big" H 4700 7550 50  0001 C CNN
+F 3 "~" H 4700 7550 50  0001 C CNN
+	1    4500 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5 #PWR048
+U 1 1 5EC91C14
+P 4500 7350
+F 0 "#PWR048" H 4500 7400 30  0001 C CNN
+F 1 "+5" H 4500 7483 50  0000 C CNN
+F 2 "" H 4500 7350 60  0000 C CNN
+F 3 "" H 4500 7350 60  0000 C CNN
+	1    4500 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 7350 4500 7550
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5ECC59D8
+P 5250 7400
+F 0 "TP2" H 5192 7426 50  0000 R CNN
+F 1 "TestPoint" H 5192 7517 50  0000 R CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Big" H 5450 7400 50  0001 C CNN
+F 3 "~" H 5450 7400 50  0001 C CNN
+	1    5250 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 7600 5250 7400
+$Comp
+L power:(GND) #PWR?
+U 1 1 5ECDB2CB
+P 5250 7600
+AR Path="/5DA394ED/5ECDB2CB" Ref="#PWR?"  Part="1" 
+AR Path="/5ECDB2CB" Ref="#PWR049"  Part="1" 
+F 0 "#PWR049" H 5250 7600 30  0001 C CNN
+F 1 "(GND)" H 5250 7600 30  0001 C CNN
+F 2 "" H 5250 7600 60  0000 C CNN
+F 3 "" H 5250 7600 60  0000 C CNN
+	1    5250 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5500 5350 5500
+Text Label 5150 5500 0    50   ~ 0
+BATT
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5ED057C8
+P 5800 7400
+F 0 "TP3" H 5858 7518 50  0000 L CNN
+F 1 "TestPoint BATT GND" H 5858 7427 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Big" H 6000 7400 50  0001 C CNN
+F 3 "~" H 6000 7400 50  0001 C CNN
+	1    5800 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7400 5800 7600
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5ED3082D
+P 6700 7500
+F 0 "TP4" H 6642 7526 50  0000 R CNN
+F 1 "TestPoint BATT GND" H 6642 7617 50  0000 R CNN
+F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Big" H 6900 7500 50  0001 C CNN
+F 3 "~" H 6900 7500 50  0001 C CNN
+	1    6700 7500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 7500 6700 7250
+Text Label 6700 7350 0    50   ~ 0
+BATT
+Wire Wire Line
+	3000 2650 3600 2650
+Wire Wire Line
+	3000 2750 3600 2750
+Text Label 3150 2650 0    50   ~ 0
+INT1
+Text Label 3150 2750 0    50   ~ 0
+INT2
+NoConn ~ 4050 6100
+NoConn ~ 3000 3650
+NoConn ~ 3000 3750
+NoConn ~ 3000 3850
+NoConn ~ 3000 3950
+NoConn ~ 3000 3250
+NoConn ~ 3000 3050
+NoConn ~ 3000 2850
+NoConn ~ 3000 1350
+NoConn ~ 3000 1250
+NoConn ~ 1300 1250
+NoConn ~ 1300 1350
+NoConn ~ 1300 1450
+NoConn ~ 1300 1550
+NoConn ~ 1300 1650
+NoConn ~ 1300 1850
+NoConn ~ 1300 1950
+NoConn ~ 1300 2050
+NoConn ~ 1300 2150
+NoConn ~ 1300 2250
+NoConn ~ 1300 2350
+NoConn ~ 1300 2950
+NoConn ~ 1300 3050
+NoConn ~ 1300 4050
+NoConn ~ 6800 3300
+NoConn ~ 5300 3600
+NoConn ~ 600  4100
+$Comp
+L Device:C_Small C13
+U 1 1 5EFB086A
+P 4450 4800
+F 0 "C13" H 4542 4846 50  0000 L CNN
+F 1 "4.7uF" H 4542 4755 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4450 4800 50  0001 C CNN
+F 3 "~" H 4450 4800 50  0001 C CNN
+	1    4450 4800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 4700
+Wire Wire Line
+	4450 4700 4550 4700
+$Comp
+L nrf-rescue:(GND)-power1 #PWR0101
+U 1 1 5EFB1BFF
+P 4450 4900
+AR Path="/5EFB1BFF" Ref="#PWR0101"  Part="1" 
+AR Path="/5C2799D2/5EFB1BFF" Ref="#PWR?"  Part="1" 
+AR Path="/5D08BD3C/5EFB1BFF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 4450 4900 30  0001 C CNN
+F 1 "(GND)" H 4450 4900 30  0001 C CNN
+F 2 "" H 4450 4900 60  0000 C CNN
+F 3 "" H 4450 4900 60  0000 C CNN
+	1    4450 4900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
