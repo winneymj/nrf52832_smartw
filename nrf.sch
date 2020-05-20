@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:nrf-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLegal 14000 8500
 encoding utf-8
@@ -421,8 +420,6 @@ Wire Wire Line
 	11350 5650 10900 5650
 Wire Wire Line
 	11950 5950 11950 6150
-Wire Wire Line
-	12550 5250 12950 5250
 Text Label 10900 5250 0    50   ~ 0
 QSPI_DATA0
 Text Label 10900 5350 0    50   ~ 0
@@ -433,8 +430,6 @@ Text Label 10900 5550 0    50   ~ 0
 QSPI_DATA2
 Text Label 10900 5650 0    50   ~ 0
 QSPI_DATA3
-Text Label 12500 5250 0    50   ~ 0
-QSPI_DATA1
 $Comp
 L power:(GND) #PWR022
 U 1 1 5EB7F023
@@ -461,18 +456,8 @@ Wire Wire Line
 	11950 4950 11950 4800
 Wire Wire Line
 	1300 3150 1000 3150
-Text Label 1050 3150 0    50   ~ 0
-BTN_1
-Wire Wire Line
-	1300 3250 1000 3250
-Wire Wire Line
-	1300 3350 1000 3350
 Wire Wire Line
 	1300 3450 1000 3450
-Text Label 1050 3250 0    50   ~ 0
-BTN_2
-Text Label 1050 3350 0    50   ~ 0
-BTN_3
 Text Label 1050 3450 0    50   ~ 0
 BTN_4
 $Comp
@@ -1072,18 +1057,6 @@ Wire Wire Line
 	10900 4200 10900 4250
 Connection ~ 10900 4200
 Wire Wire Line
-	850  2550 1300 2550
-Text Label 900  2550 0    50   ~ 0
-LIGHT1
-Wire Wire Line
-	1300 2850 850  2850
-Text Label 900  2850 0    50   ~ 0
-LIGHT2
-Wire Wire Line
-	1300 1750 850  1750
-Text Label 900  1750 0    50   ~ 0
-LIGHT3
-Wire Wire Line
 	3000 1550 3600 1550
 Text Label 3150 1550 0    50   ~ 0
 SPI_MOSI
@@ -1449,20 +1422,6 @@ Wire Wire Line
 Wire Wire Line
 	2050 4650 2050 4600
 $Comp
-L Device:R R5
-U 1 1 5EC59AD5
-P 1600 5200
-AR Path="/5EC59AD5" Ref="R5"  Part="1" 
-AR Path="/5C2799D2/5EC59AD5" Ref="R?"  Part="1" 
-AR Path="/5D08BD3C/5EC59AD5" Ref="R?"  Part="1" 
-F 0 "R5" V 1680 5200 50  0000 C CNN
-F 1 "1K" V 1600 5200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1530 5200 50  0001 C CNN
-F 3 "" H 1600 5200 50  0000 C CNN
-	1    1600 5200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R4
 U 1 1 5EC59ADB
 P 1150 5200
@@ -1477,31 +1436,9 @@ F 3 "" H 1150 5200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 5400 2350 5400
-Wire Wire Line
-	2350 5400 2350 5650
-Wire Wire Line
-	2350 5650 1600 5650
-Wire Wire Line
-	1600 5650 1600 5450
-Wire Wire Line
 	2850 5500 2450 5500
 Wire Wire Line
 	2450 5500 2450 5750
-$Comp
-L Device:LED D2
-U 1 1 5EC59AE7
-P 1600 4800
-AR Path="/5EC59AE7" Ref="D2"  Part="1" 
-AR Path="/5C2799D2/5EC59AE7" Ref="D?"  Part="1" 
-AR Path="/5D08BD3C/5EC59AE7" Ref="D?"  Part="1" 
-F 0 "D2" H 1600 4900 50  0000 C CNN
-F 1 "GREEN" H 1600 4700 50  0000 C CNN
-F 2 "LEDs:LED_0805" H 1600 4800 50  0001 C CNN
-F 3 "" H 1600 4800 50  0000 C CNN
-	1    1600 4800
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:LED D1
 U 1 1 5EC59AED
@@ -1517,13 +1454,9 @@ F 3 "" H 1150 4800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1600 4600 1600 4650
-Wire Wire Line
 	1150 4600 1150 4650
 Wire Wire Line
 	1150 4950 1150 5050
-Wire Wire Line
-	1600 4950 1600 5050
 Wire Wire Line
 	1150 5350 1150 5750
 Wire Wire Line
@@ -1702,11 +1635,6 @@ Wire Wire Line
 Connection ~ 4150 6000
 Wire Wire Line
 	4150 6000 4150 6200
-Wire Wire Line
-	1200 5450 1600 5450
-Connection ~ 1600 5450
-Wire Wire Line
-	1600 5450 1600 5350
 Connection ~ 1150 5750
 Text Notes 6900 4850 0    50   ~ 0
 3.3V Regulator
@@ -1884,17 +1812,6 @@ F 3 "" H 1150 4600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5 #PWR032
-U 1 1 5ED2EA24
-P 1600 4600
-F 0 "#PWR032" H 1600 4650 30  0001 C CNN
-F 1 "+5" H 1600 4733 50  0000 C CNN
-F 2 "" H 1600 4600 60  0000 C CNN
-F 3 "" H 1600 4600 60  0000 C CNN
-	1    1600 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5 #PWR033
 U 1 1 5ED2EDEF
 P 2050 4600
@@ -1932,18 +1849,10 @@ F 3 "" H 2550 5750 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	650  5750 1150 5750
-Text Label 650  5750 0    50   ~ 0
-PWR_SENSE
-Text Label 1200 5450 0    50   ~ 0
-PWR_STAT
+Text Label 600  5750 0    50   ~ 0
+PWR_CHRGING
 Wire Wire Line
 	3000 3450 3600 3450
-Wire Wire Line
-	3000 3550 3600 3550
-Text Label 3150 3450 0    50   ~ 0
-PWR_SENSE
-Text Label 3150 3550 0    50   ~ 0
-PWR_STAT
 $Comp
 L Switch:SW_DPST_x2 SW5
 U 1 1 5EC305B1
@@ -2056,17 +1965,12 @@ NoConn ~ 3000 2850
 NoConn ~ 3000 1350
 NoConn ~ 3000 1250
 NoConn ~ 1300 1250
-NoConn ~ 1300 1350
-NoConn ~ 1300 1450
 NoConn ~ 1300 1550
 NoConn ~ 1300 1650
 NoConn ~ 1300 1850
 NoConn ~ 1300 1950
 NoConn ~ 1300 2050
-NoConn ~ 1300 2150
 NoConn ~ 1300 2250
-NoConn ~ 1300 2350
-NoConn ~ 1300 2950
 NoConn ~ 1300 3050
 NoConn ~ 1300 4050
 NoConn ~ 6800 3300
@@ -2100,4 +2004,39 @@ F 3 "" H 4450 4900 60  0000 C CNN
 	1    4450 4900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1300 1350 850  1350
+Text Label 900  1350 0    50   ~ 0
+LIGHT2
+NoConn ~ 1300 2550
+NoConn ~ 1300 2850
+Wire Wire Line
+	1300 2350 850  2350
+NoConn ~ 1300 1450
+Text Label 900  2350 0    50   ~ 0
+LIGHT1
+Wire Wire Line
+	1300 2150 850  2150
+NoConn ~ 1300 1750
+Text Label 900  2150 0    50   ~ 0
+LIGHT3
+NoConn ~ 2850 5400
+NoConn ~ 2850 5200
+Text Label 3150 3450 0    50   ~ 0
+PWR_CHRGING
+Wire Wire Line
+	1300 2950 1000 2950
+Text Label 1050 2950 0    50   ~ 0
+BTN_3
+Text Label 1050 3150 0    50   ~ 0
+BTN_2
+Wire Wire Line
+	1300 3350 1000 3350
+NoConn ~ 1300 3250
+Text Label 1050 3350 0    50   ~ 0
+BTN_1
+Wire Wire Line
+	12550 5250 13100 5250
+Text Label 12650 5250 0    50   ~ 0
+QSPI_DATA1
 $EndSCHEMATC
