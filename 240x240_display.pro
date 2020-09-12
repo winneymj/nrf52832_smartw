@@ -1,6 +1,6 @@
-update=10/28/2019 7:42:19 PM
+update=6/27/2020 3:47:09 PM
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=240x240_display.net
+LastNetListRead=nrf.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -60,7 +60,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.0508
 SolderMaskMinWidth=0.101
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
