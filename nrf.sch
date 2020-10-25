@@ -104,11 +104,11 @@ F 3 "" H 6850 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 1150 6850 1150
+	6550 1150 6850 1150
 Wire Wire Line
 	6850 1150 6850 1000
 Wire Wire Line
-	6950 1550 6850 1550
+	6550 1550 6850 1550
 Wire Wire Line
 	6850 1550 6850 1800
 Wire Wire Line
@@ -134,23 +134,6 @@ Wire Wire Line
 	5350 2300 5850 2300
 Text Label 5600 2300 0    50   ~ 0
 BTN_4
-$Comp
-L SamacSys_Parts:113990582 IC2
-U 1 1 5EB39C74
-P 1300 1050
-F 0 "IC2" H 2150 1315 50  0000 C CNN
-F 1 "113990582" H 2150 1224 50  0000 C CNN
-F 2 "SamacSys_Parts:113990582" H 2850 1150 50  0001 L CNN
-F 3 "http://www.raytac.com/download/index.php?index_id=24" H 2850 1050 50  0001 L CNN
-F 4 "Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module" H 2850 950 50  0001 L CNN "Description"
-F 5 "2" H 2850 850 50  0001 L CNN "Height"
-F 6 "713-113990582" H 2850 750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Seeed-Studio/113990582?qs=0lSvoLzn4L96en1uEjxsrg%3D%3D" H 2850 650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Seeed Studio" H 2850 550 50  0001 L CNN "Manufacturer_Name"
-F 9 "113990582" H 2850 450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1300 1050
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:(GND) #PWR010
 U 1 1 5EB3DEB5
@@ -228,8 +211,6 @@ Wire Wire Line
 	3000 1950 3600 1950
 Text Label 3150 1950 0    50   ~ 0
 QSPI_DATA0
-Wire Wire Line
-	3000 2350 3600 2350
 Wire Wire Line
 	3000 2050 3600 2050
 Text Label 3150 2050 0    50   ~ 0
@@ -356,13 +337,13 @@ RESET
 $Comp
 L Connector_Generic:Conn_01x05 J2
 U 1 1 5D0EA690
-P 7150 1350
-F 0 "J2" H 7230 1392 50  0000 L CNN
-F 1 "Conn_01x05" H 7230 1301 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm" H 7150 1350 50  0001 C CNN
-F 3 "~" H 7150 1350 50  0001 C CNN
-	1    7150 1350
-	1    0    0    -1  
+P 6350 1350
+F 0 "J2" H 6430 1392 50  0000 L CNN
+F 1 "Conn_01x05" H 6430 1301 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch1.27mm" H 6350 1350 50  0001 C CNN
+F 3 "~" H 6350 1350 50  0001 C CNN
+	1    6350 1350
+	-1   0    0    1   
 $EndComp
 $Comp
 L Switch:SW_DPST_x2 SW4
@@ -454,7 +435,7 @@ Wire Wire Line
 	11950 4950 11950 4800
 Wire Wire Line
 	1300 3150 1000 3150
-Text Label 900  1450 0    50   ~ 0
+Text Label 3150 2750 0    50   ~ 0
 BTN_4
 $Comp
 L vib_motor:C0720B001F U?
@@ -579,7 +560,7 @@ Wire Wire Line
 	11400 1950 11900 1950
 Wire Wire Line
 	1300 3550 800  3550
-Text Label 3150 2750 0    50   ~ 0
+Text Label 850  3850 0    50   ~ 0
 MOTOR_PWM
 $Comp
 L Connector_Generic:Conn_01x12 J7
@@ -610,15 +591,13 @@ Wire Wire Line
 Wire Wire Line
 	10350 1850 11000 1850
 Wire Wire Line
-	11000 1850 11000 2250
+	11000 1850 11000 2150
 Connection ~ 11000 2250
 Wire Wire Line
 	10350 1750 11000 1750
 Wire Wire Line
 	11000 1750 11000 1850
 Connection ~ 11000 1850
-Wire Wire Line
-	10350 2050 11150 2050
 Wire Wire Line
 	11150 2050 11150 1950
 $Comp
@@ -634,10 +613,6 @@ F 3 "" H 11150 1800 60  0000 C CNN
 	1    11150 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10350 2150 10800 2150
-Text Label 10550 2150 0    50   ~ 0
-LEDK
 Wire Wire Line
 	10350 1950 11150 1950
 Connection ~ 11150 1950
@@ -662,18 +637,18 @@ Wire Wire Line
 Text Label 10550 1250 0    50   ~ 0
 SPI_RESET
 Wire Wire Line
-	10350 1150 11100 1150
+	10350 1150 11350 1150
 Wire Wire Line
-	11100 1150 11100 1300
+	11350 1150 11350 1300
 $Comp
 L power:(GND) #PWR026
 U 1 1 5EC295E8
-P 11100 1300
-F 0 "#PWR026" H 11100 1300 30  0001 C CNN
-F 1 "(GND)" H 11100 1300 30  0001 C CNN
-F 2 "" H 11100 1300 60  0000 C CNN
-F 3 "" H 11100 1300 60  0000 C CNN
-	1    11100 1300
+P 11350 1300
+F 0 "#PWR026" H 11350 1300 30  0001 C CNN
+F 1 "(GND)" H 11350 1300 30  0001 C CNN
+F 2 "" H 11350 1300 60  0000 C CNN
+F 3 "" H 11350 1300 60  0000 C CNN
+	1    11350 1300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -775,9 +750,9 @@ Text Label 3150 2250 0    50   ~ 0
 QSPI_CS
 Text Label 3150 2650 0    50   ~ 0
 QSPI_DATA2
-Text Label 3150 1250 0    50   ~ 0
+Text Label 1050 2850 0    50   ~ 0
 SDA
-Text Label 3150 1350 0    50   ~ 0
+Text Label 1050 3050 0    50   ~ 0
 SCL
 $Comp
 L Device:C_Small C8
@@ -790,7 +765,6 @@ F 3 "~" H 11150 2150 50  0001 C CNN
 	1    11150 2150
 	1    0    0    -1  
 $EndComp
-Connection ~ 11150 2050
 Wire Wire Line
 	11150 2250 11000 2250
 $Comp
@@ -860,7 +834,7 @@ LIGHT3
 Wire Wire Line
 	11150 3150 11350 3150
 Text Label 11150 3150 0    50   ~ 0
-LEDK
+LEDA
 $Comp
 L power:+3.3 #PWR?
 U 1 1 5EC16355
@@ -928,7 +902,7 @@ LIGHT1
 Wire Wire Line
 	12800 3150 13000 3150
 Text Label 12800 3150 0    50   ~ 0
-LEDK
+LEDA
 $Comp
 L power:+3.3 #PWR?
 U 1 1 5EC1E2CE
@@ -996,7 +970,7 @@ LIGHT2
 Wire Wire Line
 	12800 3900 13000 3900
 Text Label 12800 3900 0    50   ~ 0
-LEDK
+LEDA
 $Comp
 L Device:C_Small C11
 U 1 1 5EC25E99
@@ -1815,8 +1789,6 @@ F 3 "" H 2550 5750 60  0000 C CNN
 	1    2550 5750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	650  5750 800  5750
 Text Label 700  5750 0    50   ~ 0
 PWR_CHRGING
 Wire Wire Line
@@ -1934,7 +1906,6 @@ NoConn ~ 1300 1250
 NoConn ~ 1300 1650
 NoConn ~ 1300 1850
 NoConn ~ 1300 2050
-NoConn ~ 1300 3050
 NoConn ~ 6800 3300
 NoConn ~ 5300 3600
 $Comp
@@ -1967,8 +1938,6 @@ F 3 "" H 4450 4900 60  0000 C CNN
 $EndComp
 Text Label 900  2250 0    50   ~ 0
 LIGHT2
-NoConn ~ 1300 2550
-NoConn ~ 1300 2850
 Wire Wire Line
 	1300 2350 850  2350
 Text Label 900  2350 0    50   ~ 0
@@ -1979,18 +1948,18 @@ Text Label 900  2150 0    50   ~ 0
 LIGHT3
 NoConn ~ 2850 5400
 NoConn ~ 2850 5200
-Text Label 3050 3450 0    50   ~ 0
+Text Label 3100 1750 0    50   ~ 0
 PWR_CHRGING
 Wire Wire Line
 	1300 2950 1000 2950
-Text Label 1050 2950 0    50   ~ 0
+Text Label 1050 3350 0    50   ~ 0
 BTN_3
 Text Label 1050 3150 0    50   ~ 0
 BTN_2
 Wire Wire Line
 	1300 3350 1000 3350
 NoConn ~ 1300 3250
-Text Label 1050 3350 0    50   ~ 0
+Text Label 1050 2950 0    50   ~ 0
 BTN_1
 Wire Wire Line
 	12550 5250 13100 5250
@@ -1998,20 +1967,6 @@ Text Label 12650 5250 0    50   ~ 0
 QSPI_DATA1
 NoConn ~ 3000 3550
 NoConn ~ 6100 2900
-$Comp
-L Connector:TestPoint TP5
-U 1 1 5ED3684F
-P 800 5750
-F 0 "TP5" H 742 5776 50  0000 R CNN
-F 1 "TestPoint" H 742 5867 50  0000 R CNN
-F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 1000 5750 50  0001 C CNN
-F 3 "~" H 1000 5750 50  0001 C CNN
-	1    800  5750
-	1    0    0    -1  
-$EndComp
-Connection ~ 800  5750
-Wire Wire Line
-	800  5750 1150 5750
 $Comp
 L Connector_Generic:Conn_01x10 J1
 U 1 1 5EF97A2E
@@ -2103,7 +2058,6 @@ Wire Wire Line
 	1300 2250 850  2250
 NoConn ~ 3000 1550
 NoConn ~ 3000 1650
-NoConn ~ 3000 1750
 Wire Wire Line
 	1300 1450 850  1450
 NoConn ~ 1300 3450
@@ -2112,7 +2066,162 @@ Wire Wire Line
 Wire Wire Line
 	3000 1250 3600 1250
 NoConn ~ 1300 3650
-NoConn ~ 1300 3850
 Wire Wire Line
 	1300 4050 850  4050
+Wire Wire Line
+	1300 2550 850  2550
+NoConn ~ 3000 2350
+Wire Wire Line
+	3000 1750 3600 1750
+Wire Wire Line
+	650  5750 1150 5750
+$Comp
+L Device:R R5
+U 1 1 5F6C25E5
+P 10600 2150
+F 0 "R5" V 10550 2050 50  0000 R CNN
+F 1 "1" V 10600 2250 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10530 2150 50  0001 C CNN
+F 3 "~" H 10600 2150 50  0001 C CNN
+	1    10600 2150
+	0    1    1    0   
+$EndComp
+Text Label 10750 2150 0    50   ~ 0
+LEDK
+Wire Wire Line
+	10350 2150 10450 2150
+Wire Wire Line
+	10750 2150 11000 2150
+Connection ~ 11000 2150
+Wire Wire Line
+	11000 2150 11000 2250
+Text Label 10550 2050 0    50   ~ 0
+LEDA
+Wire Wire Line
+	10350 2050 10750 2050
+$Comp
+L Device:C_Small C14
+U 1 1 5F738E71
+P 8000 7400
+AR Path="/5F738E71" Ref="C14"  Part="1" 
+AR Path="/5C2799D2/5F738E71" Ref="C?"  Part="1" 
+AR Path="/5D08445F/5F738E71" Ref="C?"  Part="1" 
+AR Path="/5D08BD3C/5F738E71" Ref="C?"  Part="1" 
+F 0 "C14" H 8100 7400 50  0000 L CNN
+F 1 "??pF" H 7950 7500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8000 7400 50  0001 C CNN
+F 3 "" H 8000 7400 50  0000 C CNN
+	1    8000 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L nrf-rescue:(GND)-power1 #PWR032
+U 1 1 5F7394B3
+P 8000 7650
+AR Path="/5F7394B3" Ref="#PWR032"  Part="1" 
+AR Path="/5C2799D2/5F7394B3" Ref="#PWR?"  Part="1" 
+AR Path="/5D08BD3C/5F7394B3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR032" H 8000 7650 30  0001 C CNN
+F 1 "(GND)" H 8000 7650 30  0001 C CNN
+F 2 "" H 8000 7650 60  0000 C CNN
+F 3 "" H 8000 7650 60  0000 C CNN
+	1    8000 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 7500 8000 7650
+Wire Wire Line
+	8000 7300 8000 7050
+Text Label 8000 7250 1    50   ~ 0
+SPI_MOSI
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 5F7A4F6A
+P 6400 6500
+F 0 "J3" H 6480 6542 50  0000 L CNN
+F 1 "Conn_01x05" H 6480 6451 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm" H 6400 6500 50  0001 C CNN
+F 3 "~" H 6400 6500 50  0001 C CNN
+	1    6400 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6600 6500 7300 6500
+Text Label 6750 6500 0    50   ~ 0
+PWR_CHRGING
+$Comp
+L nrf-rescue:(GND)-power1 #PWR051
+U 1 1 5F7D59F0
+P 6800 6900
+AR Path="/5F7D59F0" Ref="#PWR051"  Part="1" 
+AR Path="/5C2799D2/5F7D59F0" Ref="#PWR?"  Part="1" 
+AR Path="/5D08BD3C/5F7D59F0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR051" H 6800 6900 30  0001 C CNN
+F 1 "(GND)" H 6800 6900 30  0001 C CNN
+F 2 "" H 6800 6900 60  0000 C CNN
+F 3 "" H 6800 6900 60  0000 C CNN
+	1    6800 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 6700 6800 6700
+Wire Wire Line
+	6800 6700 6800 6900
+Wire Wire Line
+	6600 6300 6800 6300
+Wire Wire Line
+	6800 6300 6800 6100
+$Comp
+L power:+5 #PWR050
+U 1 1 5F804326
+P 6800 6100
+F 0 "#PWR050" H 6800 6150 30  0001 C CNN
+F 1 "+5" H 6800 6233 50  0000 C CNN
+F 2 "" H 6800 6100 60  0000 C CNN
+F 3 "" H 6800 6100 60  0000 C CNN
+	1    6800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3 #PWR?
+U 1 1 5F87C00F
+P 7500 6100
+AR Path="/5D09E285/5F87C00F" Ref="#PWR?"  Part="1" 
+AR Path="/5F87C00F" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 7500 6150 30  0001 C CNN
+F 1 "+3.3" H 7500 6233 50  0000 C CNN
+F 2 "" H 7500 6100 60  0000 C CNN
+F 3 "" H 7500 6100 60  0000 C CNN
+	1    7500 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 6600 7500 6100
+Wire Wire Line
+	6600 6600 7500 6600
+Text Notes 6250 2650 0    50   ~ 0
+Digital Accel Sensor
+$Comp
+L SamacSys_Parts:113990582 IC2
+U 1 1 5EB39C74
+P 1300 1050
+F 0 "IC2" H 2150 1315 50  0000 C CNN
+F 1 "113990582" H 2150 1224 50  0000 C CNN
+F 2 "SamacSys_Parts:113990582" H 2850 1150 50  0001 L CNN
+F 3 "http://www.raytac.com/download/index.php?index_id=24" H 2850 1050 50  0001 L CNN
+F 4 "Bluetooth Modules (802.15.1) MDBT50Q-1M nRF52840 Based BLE Module" H 2850 950 50  0001 L CNN "Description"
+F 5 "2" H 2850 850 50  0001 L CNN "Height"
+F 6 "713-113990582" H 2850 750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Seeed-Studio/113990582?qs=0lSvoLzn4L96en1uEjxsrg%3D%3D" H 2850 650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Seeed Studio" H 2850 550 50  0001 L CNN "Manufacturer_Name"
+F 9 "113990582" H 2850 450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3850 800  3850
+Wire Wire Line
+	1300 3050 1000 3050
+Wire Wire Line
+	1300 2850 1000 2850
 $EndSCHEMATC

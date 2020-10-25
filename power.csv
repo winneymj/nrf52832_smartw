@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"R4,R16";"R_0603_HandSoldering";2;"10K";;;
+2;"J3";"Pin_Header_Straight_1x05_Pitch2.54mm";1;"Conn_01x05";;;
+3;"U4";"SOT-23-5";1;"MIC5219-3.3YM5";;;
+4;"C3";"C_0603_HandSoldering";1;"10uF";;;
+5;"C6,C7,C9";"C_0603_HandSoldering";3;"470pF";;;
+6;"C13";"C_0603_HandSoldering";1;"4.7uF";;;
+7;"R6";"R_0603_HandSoldering";1;"270K";;;
+8;"R7,R14";"R_0603_HandSoldering";2;"100K";;;
+9;"R15";"R_0603_HandSoldering";1;"1K";;;
+10;"TP2";"Measurement_Point_Square-SMD-Pad_Big";1;"TestPoint";;;
+11;"TP4";"Measurement_Point_Square-SMD-Pad_Big";1;"TestPoint BATT GND";;;
+12;"U3";"QFN-20-1EP_4x4mm_Pitch0.5mm";1;"MCP73871-xxI_ML";;;

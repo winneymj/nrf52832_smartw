@@ -1,4 +1,4 @@
-update=10/16/2019 8:21:48 PM
+update=9/26/2020 5:54:03 PM
 version=1
 last_client=pcbnew
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=power.net
+LastNetListRead=nrf.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -61,7 +61,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.0508
 SolderMaskMinWidth=0.101
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
