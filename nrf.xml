@@ -821,10 +821,10 @@
       <uri>C:\Program Files\KiCad\share\kicad\library/Switch.lib</uri>
     </library>
     <library logical="_passive">
-      <uri>C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/_passive.lib</uri>
+      <uri>C:\development\kicad\kicad-schlib-master\library\_passive.lib</uri>
     </library>
     <library logical="_semi">
-      <uri>C:/Users/dell/Documents/KiCad/kicad-schlib-master/library/_semi.lib</uri>
+      <uri>C:\development\kicad\kicad-schlib-master\library\_semi.lib</uri>
     </library>
     <library logical="accel">
       <uri>C:\Users\dell\Documents\KiCad\nrf_v1\nrf52832_smartw/accel.lib</uri>
