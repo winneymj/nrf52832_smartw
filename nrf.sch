@@ -460,7 +460,7 @@ Wire Wire Line
 	11400 1950 11900 1950
 Wire Wire Line
 	3650 4400 3150 4400
-Text Label 3200 4200 0    50   ~ 0
+Text Label 3300 4200 0    50   ~ 0
 MOTOR_PWM
 $Comp
 L Connector_Generic:Conn_01x12 J7
@@ -851,15 +851,15 @@ $EndComp
 Wire Wire Line
 	10900 4200 10900 4250
 Connection ~ 10900 4200
-Text Label 1150 4300 0    50   ~ 0
+Text Label 1150 4700 0    50   ~ 0
 SPI_MOSI
 Text Label 1150 4500 0    50   ~ 0
 SPI_SCK
-Text Label 1150 4700 0    50   ~ 0
+Text Label 1150 4300 0    50   ~ 0
 SPI_CS
-Text Label 1150 2300 0    50   ~ 0
-SPI_DC
 Text Label 1150 4200 0    50   ~ 0
+SPI_DC
+Text Label 1150 2300 0    50   ~ 0
 SPI_RESET
 $Comp
 L SamacSys_Parts:BMA423 IC?
@@ -1773,7 +1773,6 @@ Text Label 3300 2500 0    50   ~ 0
 BTN_3
 Text Label 3300 2300 0    50   ~ 0
 BTN_2
-NoConn ~ 1500 3800
 Text Label 1300 1900 0    50   ~ 0
 BTN_1
 Wire Wire Line
@@ -1866,7 +1865,6 @@ Wire Wire Line
 	1550 4700 1100 4700
 Wire Wire Line
 	1550 2200 1100 2200
-NoConn ~ 1500 4000
 Wire Wire Line
 	3600 4300 3150 4300
 Wire Wire Line
