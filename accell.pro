@@ -1,4 +1,4 @@
-update=5/3/2020 2:27:39 PM
+update=11/23/2020 7:49:45 PM
 version=1
 last_client=pcbnew
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=accel.net
+LastNetListRead=nrf.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

@@ -373,7 +373,7 @@ AR Path="/5D059B17/5EB9AFFB" Ref="D?"  Part="1"
 AR Path="/5EB9AFFB" Ref="D4"  Part="1" 
 F 0 "D4" V 12133 1650 50  0000 C CNN
 F 1 "ZLLS410" V 12224 1650 50  0000 C CNN
-F 2 "Diodes_SMD:D_SOD-323" H 12350 1650 60  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 12350 1650 60  0001 C CNN
 F 3 "" H 12350 1650 60  0000 C CNN
 	1    12350 1650
 	0    1    1    0   
@@ -869,7 +869,7 @@ AR Path="/5D09E285/5EC18F54" Ref="IC?"  Part="1"
 AR Path="/5EC18F54" Ref="IC1"  Part="1" 
 F 0 "IC1" V 6350 2200 50  0000 C CNN
 F 1 "BMA423" V 6200 3200 50  0000 C CNN
-F 2 "SamacSys_Parts:BMA423" H 7050 3400 50  0001 L CNN
+F 2 "Package_LGA_marks:LGA-12_2x2mm_P0.5mm_small_pad" H 7050 3400 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/BMA423.pdf" H 7050 3300 50  0001 L CNN
 F 4 "Accelerometers Triaxial low-g 12bit Acceleration Sensor" H 7050 3200 50  0001 L CNN "Description"
 F 5 "1" H 7050 3100 50  0001 L CNN "Height"
@@ -1723,7 +1723,6 @@ Text Label 3400 4400 0    50   ~ 0
 INT2
 NoConn ~ 6200 6400
 NoConn ~ 1550 4600
-NoConn ~ 6800 3300
 NoConn ~ 5300 3600
 $Comp
 L Device:C_Small C13
@@ -2200,4 +2199,5 @@ Wire Wire Line
 	3400 7550 3400 7050
 Text Label 3400 7550 1    50   ~ 0
 MOTOR_PWM
+NoConn ~ 6800 3300
 $EndSCHEMATC
